@@ -25,11 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
-![News homepage screenshot](./screenshot.jpg)
+![News homepage screenshot](https://github.com/Marchino5791/Frontend-Mentor-News-Homepage/blob/main/Screenshot%202023-01-09%2019.26.38.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/Marchino5791/Frontend-Mentor-News-Homepage](https://github.com/Marchino5791/Frontend-Mentor-News-Homepage)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
