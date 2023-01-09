@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Marchino5791/Frontend-Mentor-News-Homepage](https://github.com/Marchino5791/Frontend-Mentor-News-Homepage)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://marchino5791.github.io/Frontend-Mentor-News-Homepage/](https://marchino5791.github.io/Frontend-Mentor-News-Homepage/)
 
 ## My process
 
