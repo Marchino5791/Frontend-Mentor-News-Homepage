@@ -17,7 +17,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    margin: 2rem 12%;
+    padding: 2rem 12%;
     display: grid;
     /*grid-template-rows: min-content repeat(3, 1fr); */
     grid-template-columns: repeat(3, [content-start] 2fr [content-end]);
@@ -51,33 +51,41 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
     grid-column: content-start 1 / content-end 3;
     grid-row: 1 / 2;
     margin: 1.5rem 0;
+}
+
+.navbar__logo-box {
+    display: flex;
 }
 
 .navbar__logo {
     height: 2rem;
 }
 
-.navbar__list {
-    list-style: none;
+nav {
     width: 40%;
     height: 100%;
     display: flex;
+}
+
+.navbar__list {
+    list-style: none;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .navabar__list__item__link {
     display: flex;
     font-size: var(--px15);
     text-decoration: none;
-    color: var(--secondary-text);
+    color: var(--primary-text-and-dark-bg);
 }
 
-.navbar__list__close {
+.navbar__close {
     display: none;
 }
 
@@ -121,7 +129,7 @@ body {
     height: 3rem;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--bg-and-contrast-text);
     background-color: var(--btn-and-hover);
     border: none;
@@ -237,7 +245,7 @@ body {
 
 @media screen and (max-width: 1200px) {
     body {
-        margin: 2rem;
+        padding: 2rem;
     }
 
     .main-article__title__h1 {
@@ -248,7 +256,7 @@ body {
         font-size: 2rem;
     }
 
-    .navbar__list {
+    nav {
         width: 60%;
     }
 }
@@ -258,10 +266,9 @@ body {
     .navbar {
         grid-column: 1 / -1;
         margin: 1.5rem 0 0;
-        align-items: center;
     }
 
-    .navbar__list {
+    nav {
         width: 80%;
     }
 
@@ -298,7 +305,8 @@ body {
 @media screen and (max-width: 500px) {
 
     body {
-        margin: 0 1rem;
+        padding: 0 1rem 2rem;
+        position: relative;
     }
 
     .overflow-effect {
@@ -306,19 +314,22 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        height: 400vh;
+        height: 100%;
         background-color: black;
         opacity: .5;
         display: none;
     }
 
-    .navbar__list {
-        width: 0%;
-        height: 400vh;
-        position: absolute;
+    nav {
+        width: 70%;
+        position: fixed;
         top: 0;
         right: 0;
         background-color: var(--bg-and-contrast-text);
+        flex-direction: column;
+    }
+
+    .navbar__list {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
@@ -329,27 +340,34 @@ body {
         margin-bottom: 1.75rem;
     }
 
-    .navbar__list__close {
+    .navbar__close {
+        height: 2rem;
         margin: 1.5rem 1.5rem 5rem auto;
         display: block;
         cursor: pointer;
-        opacity: 0;
+
         animation: transform .2s;
     }
 
     .navbar__icon-menu {
-        display: block;
+        display: flex;
+        align-items: center;
         cursor: pointer;
         animation: transform .2s;
     }
 
     .navbar__icon-menu:active,
-    .navbar__list__close:active {
+    .navbar__close:active {
         transform: translateY(3px);
     }
 
     .navabar__list__item__link {
-        color: var(--primary-text-and-dark-bg);
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    html {
+        font-size: 87.5%;
     }
 }

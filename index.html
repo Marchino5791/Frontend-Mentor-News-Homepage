@@ -12,7 +12,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
-
   <title>Frontend Mentor | News homepage</title>
 </head>
 
@@ -22,21 +21,29 @@
 
   </div>
 
-  <nav class="navbar">
-    <img class="navbar__logo" src="assets/images/logo.svg" alt="Logo W">
-    <ul class="navbar__list">
-      <img src="assets/images/icon-menu-close.svg" alt="close menu" class="navbar__list__close">
-      <li class="navbar__list__item"><a href="#home" class="navabar__list__item__link">Home</a></li>
-      <li class="navbar__list__item"><a href="#news" class="navabar__list__item__link">New</a></li>
-      <li class="navbar__list__item"><a href="#popular" class="navabar__list__item__link">Popular</a></li>
-      <li class="navbar__list__item"><a href="#" class="navabar__list__item__link">Trending</a></li>
-      <li class="navbar__list__item"><a href="#" class="navabar__list__item__link">Categories</a></li>
-    </ul>
+  <header class="navbar">
+    <picture class="navbar__logo-box">
+      <img class="navbar__logo" src="assets/images/logo.svg" alt="Logo W">
+    </picture>
+
+    <nav>
+      <img src="assets/images/icon-menu-close.svg" alt="close menu" class="navbar__close">
+      <ul class="navbar__list">
+        <li class="navbar__list__item"><a href="#home" class="navabar__list__item__link">Home</a></li>
+        <li class="navbar__list__item"><a href="#news" class="navabar__list__item__link">New</a></li>
+        <li class="navbar__list__item"><a href="#popular" class="navabar__list__item__link">Popular</a></li>
+        <li class="navbar__list__item"><a href="#" class="navabar__list__item__link">Trending</a></li>
+        <li class="navbar__list__item"><a href="#" class="navabar__list__item__link">Categories</a></li>
+      </ul>
+    </nav>
+
     <picture class="navbar__icon-menu">
       <img src="assets/images/icon-menu.svg" alt="open menu">
     </picture>
 
-  </nav>
+  </header>
+
+
 
   <main class="main-article" id="home">
     <picture class="main-article__img-box">
