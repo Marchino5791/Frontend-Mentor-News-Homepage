@@ -91,6 +91,10 @@ nav {
     
 }
 
+nav button {
+    width: 100%;
+}
+
 .navbar__close {
     display: none;
 }
