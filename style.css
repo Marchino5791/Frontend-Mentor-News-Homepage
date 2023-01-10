@@ -88,11 +88,10 @@ nav {
     font-size: var(--px15);
     text-decoration: none;
     color: var(--secondary-text);
-    
 }
 
 nav button {
-    width: 100%;
+    display: none;
 }
 
 .navbar__close {
@@ -349,6 +348,11 @@ nav button {
     .navbar__list__item {
         margin-left: 1.5rem;
         margin-bottom: 1.75rem;
+    }
+    
+    nav button {
+        width: 100%;
+        display: block;
     }
 
     .navbar__close {
