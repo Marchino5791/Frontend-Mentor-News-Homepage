@@ -26,6 +26,11 @@ body {
     background-color: var(--bg-and-contrast-text);
 }
 
+button {
+    background-color: transparent;
+    border: none;
+}
+
 .navabar__list__item__link:hover,
 .popular__article__text__link:hover {
     color: var(--btn-and-hover);
