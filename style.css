@@ -82,7 +82,8 @@ nav {
     display: flex;
     font-size: var(--px15);
     text-decoration: none;
-    color: var(--primary-text-and-dark-bg);
+    color: var(--secondary-text);
+    
 }
 
 .navbar__close {
@@ -346,7 +347,6 @@ nav {
         margin: 1.5rem 1.5rem 5rem auto;
         display: block;
         cursor: pointer;
-
         animation: transform .2s;
     }
 
@@ -364,6 +364,7 @@ nav {
 
     .navabar__list__item__link {
         font-size: 1rem;
+        color: var(--primary-text-and-dark-bg);
     }
 }
 
