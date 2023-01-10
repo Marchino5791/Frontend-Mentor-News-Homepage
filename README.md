@@ -49,8 +49,8 @@ Users should be able to:
 I learn how to combine jQuery with CSS media queries:
 
 $(window).resize(function () { 
-  if ($(window).width() > 1200) {
-    console.log("width > 1200px");
+  if ($(window).width() > 500) {
+    console.log("width > 500px");
   }
  });
 
