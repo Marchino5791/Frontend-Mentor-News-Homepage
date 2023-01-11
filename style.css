@@ -331,6 +331,7 @@ nav {
     }
 
     nav {
+        display: none;
         width: 70%;
         position: fixed;
         top: 0;
