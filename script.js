@@ -1,5 +1,5 @@
 function openMenu() {
-  $("nav").show(200);
+  $("nav").show(200, $("nav").css("display", "flex"));
   $(".overflow-effect").show(200);
 }
 
