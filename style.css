@@ -87,7 +87,7 @@ nav {
     display: flex;
     font-size: var(--px15);
     text-decoration: none;
-    color: var(--primary-text-and-dark-bg);
+    color: var(--secondary-text);
 }
 
 .navbar__close-box {
@@ -378,6 +378,7 @@ nav {
 
     .navabar__list__item__link {
         font-size: 1rem;
+        color: var(--primary-text-and-dark-bg);
     }
 }
 
